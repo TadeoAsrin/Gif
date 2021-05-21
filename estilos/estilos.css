@@ -1,0 +1,557 @@
+body header, body #buscador #barra-superior, body #contenedor-sugerencias .sugerencia #titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0px;
+  height: 24px;
+}
+
+body #contenedor-botones button, .modo-oscuro #contenedor-botones button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 18px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  width: 140px;
+}
+
+body #contenedor-botones button:hover, .modo-oscuro #contenedor-botones button:hover {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+body #contenedor-botones button:active, .modo-oscuro #contenedor-botones button:active {
+  border: 1px dotted #110038;
+}
+
+body #elegir-tema #menu button, body #buscador #div-input #buscar, body #menu-buscador div {
+  background: #F0F0F0;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+body #elegir-tema #menu button:hover, body #buscador #div-input #buscar:hover, body #menu-buscador div:hover {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+body #elegir-tema #menu button:active, body #buscador #div-input #buscar:active, body #menu-buscador div:active {
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+body #elegir-tema #menu, body #buscador, body #buscador #div-input input, body #menu-buscador {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  padding: 0px;
+}
+
+.modo-oscuro #elegir-tema #menu, .modo-oscuro #buscador, .modo-oscuro #buscador #menu-buscador {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+body #input-2,
+body #input-3 {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+body header p, body #buscador #barra-superior p, body #buscador #div-input input :placeholder-shown, body #buscador #div-input #buscar p, body #menu-buscador div p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body header {
+  height: 23px;
+  width: 100%;
+}
+
+body header p {
+  font-size: 12px;
+}
+
+body #contenedor {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+body #cabecera {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #cabecera #logo-day {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body #contenedor-botones {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+body #contenedor-botones button a {
+  text-decoration: none;
+}
+
+body #contenedor-botones button .modo-dark {
+  background: #EE3EFE;
+  border: 0 1px 0 0 #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+body #contenedor-botones #btn-4 {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-left: 20px;
+  text-align: left;
+  width: 100px;
+}
+
+body #contenedor-botones #btn-4:active {
+  border: none;
+}
+
+body #contenedor-botones #btn-4:hover {
+  border: 1px dotted #110038;
+}
+
+body #elegir-tema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #elegir-tema #btn-tema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #elegir-tema #btn-tema #btn-2 {
+  margin-left: 20px;
+}
+
+body #elegir-tema #btn-tema #btn-3 {
+  margin-left: 0px;
+  width: 25px;
+}
+
+body #elegir-tema #menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  padding: 0px;
+  width: 165px;
+}
+
+body #elegir-tema #menu button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body #buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0px 20px 0px;
+}
+
+body #buscador #barra-superior {
+  margin: 5px;
+}
+
+body #buscador #div-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+}
+
+body #buscador #div-input input {
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  height: 40px;
+  padding-left: 5px;
+  width: 1200px;
+}
+
+body #buscador #div-input input :placeholder-shown {
+  color: #110038;
+}
+
+body #buscador #div-input #buscar {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  margin: 10px;
+  width: 100px;
+}
+
+body #buscador #div-input #buscar p {
+  color: #B4B4B4;
+  margin: 5px;
+}
+
+body #buscador #div-input #buscar img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 16px;
+  margin: 5px;
+  width: 16px;
+}
+
+body #menu-buscador {
+  display: none;
+}
+
+body #menu-buscador div {
+  background: #DBDBDB;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body #menu-buscador div p {
+  color: #110038;
+}
+
+body #input-2,
+body #input-3 {
+  width: 1255px;
+}
+
+body #contenedorBotonesBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25px;
+}
+
+body #contenedorBotonesBusqueda .botones-guardado {
+  background-color: #4180F6;
+  border: #4C2F99 1px;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  width: 140px;
+  height: 34px;
+  text-align: center;
+  color: white;
+  margin-right: 15px;
+  padding-top: 10px;
+}
+
+body .barra-nueva {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  display: block;
+  height: 24px;
+  width: 1350px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  padding-top: 5px;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+body #contenedorDeBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+body #contenedorDeBusqueda img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5px;
+  height: 324px;
+  width: 300px;
+}
+
+body #contenedor-sugerencias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+}
+
+body #contenedor-sugerencias .sugerencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 324px;
+  width: 300px;
+}
+
+body #contenedor-sugerencias .sugerencia #giphy-sugerido {
+  position: absolute;
+}
+
+body #contenedor-sugerencias .sugerencia #giphy-sugerido:hover {
+  border: 1px dotted #110038;
+}
+
+body #contenedor-sugerencias .sugerencia #titulo {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 300px;
+  z-index: 1;
+}
+
+body #contenedor-sugerencias #giphys-sugeridos {
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  color: #FFFFFF;
+  height: 28px;
+  width: 75px;
+  margin: 10px;
+  z-index: 1;
+}
+
+body #contenedor-sugerencias #giphys-sugeridos:hover {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+body #contenedor-sugerencias #giphys-sugeridos p {
+  margin: 5px;
+}
+
+body #contenedor-tendencias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+}
+
+body #contenedor-tendencias .tendencia {
+  margin: 5px;
+  height: 324px;
+  width: 300px;
+}
+
+body #input-sugerencias,
+body #input-tendencias {
+  width: 1255px;
+}
+
+body #input-sugerencias input,
+body #input-tendencias input {
+  width: 1350px;
+}
+
+body .contenedor-misgifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 64px;
+}
+
+.modo-oscuro #contenedor {
+  background-color: #110038;
+}
+
+.modo-oscuro #contenedor-botones button {
+  background: #EE3EFE;
+  border: 0 1px 0 0 #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.modo-oscuro #contenedor-botones button:hover {
+  border: 1px dotted #FFFFFF;
+}
+
+.modo-oscuro #gifOF_logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.modo-oscuro #elegir-tema #menu {
+  display: none;
+}
+
+.modo-oscuro #elegir-tema #menu button:active {
+  background: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.modo-oscuro #buscador #barra-superior {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  margin: 5px;
+}
+
+.modo-oscuro #buscador #div-input #buscar {
+  border: 0 1px 0 0 #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #B4B4B4;
+}
+
+.modo-oscuro #buscador #div-input #buscar p {
+  color: #8F8F8F;
+}
+
+.modo-oscuro #buscador #menu-buscador div {
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  background: #CCCCCC;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modo-oscuro #buscador #menu-buscador div p {
+  color: #110038;
+}
+
+.modo-oscuro .contenedor-misgifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 64px;
+}
+/*# sourceMappingURL=estilos.css.map */
